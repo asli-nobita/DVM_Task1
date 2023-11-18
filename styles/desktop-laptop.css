@@ -60,6 +60,12 @@ and (min-width : 1024px) {
     #nav-options a {
         color: var(--text-color);
     }
+    .menu {
+        display: none;
+    }
+    .burger-menu {
+        display: none;
+    }
     #banner {
         display: flex;
         justify-content: center;
