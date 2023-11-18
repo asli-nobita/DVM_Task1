@@ -1,30 +1,13 @@
-const dropdownBtns = document.querySelectorAll('.menu-icon');
+document.addEventListener('DOMContentLoaded', ()=>{
+    const menuBtn = document.getElementsByClassName('menu-icon');
+    const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+    const burgerMenu = document.getElementById('burger-menu');
 
-const toggleMenu = function(menu) {
-    if(menu.style.display === 'none') {
-        menu.style.display = 'block';
-    } else {
-        menu.style.display = 'none';
-    }
-}
-
-dropdownBtns.forEach(btn => {
-    btn.addEventListener('click', function() {
-        const index = Array.from(dropdownBtns).indexOf(btn);
-
-        switch (index) {
-            case 0:
-                toggleMenu(shopMenu);
-                break;
-            case 1:
-                toggleMenu(exploreMenu);
-                break;
-            case 2:
-                toggleMenu(supportMenu);
-                break;
-            case 3:
-                toggleMenu(companyMenu);
-                break;
-        }
+    const toggleDropdown = function() {
+        burgerMenu.classList.toggle('show');
+    };
+    mobileMenuBtn.addEventListener('click', function(e) {
+        e.stopPropagation();
+        toggleDropdown();
     });
-});
+})
