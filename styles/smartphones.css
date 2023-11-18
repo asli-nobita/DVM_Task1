@@ -67,6 +67,9 @@ and (max-width : 768px) {
         cursor: pointer;
         position: relative;
     }
+    #search, #cart {
+        opacity: 0.6;
+    }
     .burger-menu {
         display: none;
         transform: translateY(-500px);
@@ -196,6 +199,7 @@ and (max-width : 768px) {
         max-width: 100%;
         margin: 0;
         padding: 10px 20px;
+        transition: all 0.3s ease;
     }
     .footer-mobile hr {
         opacity: 0.5;
@@ -209,7 +213,7 @@ and (max-width : 768px) {
         justify-content: space-between;
         align-items: center;
     }
-    .dropdown-btn {
+    .menu-icon {
         font-size: 30px;
         margin: 0;
         padding: 0;
