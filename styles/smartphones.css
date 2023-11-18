@@ -1,0 +1,266 @@
+:root{
+    --background-color: #f4f4f4;
+    --primary-color: #44d62c;
+    --text-color: #999;
+    --font-weight-bold: 400;
+    --light-color: #222;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    background-color: var(--light-color);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+h1 {
+    font-weight: 600;
+}
+.svg {
+    height: 20px;
+    width: auto;
+}
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+a {
+    text-decoration: none;
+    color: var(--background-color);
+}
+
+/* Smartphones  */
+@media only screen 
+and (max-width : 768px) {
+    .small {
+        position: fixed;
+        top: 0;
+        z-index: 100;
+        width: 100%;
+        background-color: black;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        height: auto;
+        border-bottom: 1px solid var(--primary-color);
+    }
+    .svg {
+        margin: 10px 20px;
+        transform: scale(1.5);
+    }
+    .large {
+        display: none;
+    }
+    #nav-options {
+        display: flex;
+        flex-flow: row wrap;
+    }
+    #nav-options li {
+        margin: 10px 20px;
+    }
+    #nav-options a {
+        color: var(--text-color);
+    }
+    .menu-icon {
+        cursor: pointer;
+        position: relative;
+    }
+    #search, #cart {
+        opacity: 0.6;
+    }
+    .burger-menu {
+        display: none;
+        transform: translateY(-500px);
+    }
+    #banner {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        background-color: #555;
+        font-size: 14px;
+        color: white;
+        height: auto;
+        padding: 7px;
+        transform: translateY(46px);
+    }
+    h3 {
+        font-size: 1.5rem;
+        font-weight: 400;
+    }
+    .card {
+        height: 580px;
+        margin: 5px 0 5px 0;
+        max-width: 100%;
+        box-sizing: border-box;
+        background-repeat: no-repeat;
+        padding-top: 4rem;
+    }
+    .heading {
+        text-align: center;
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;        
+    }
+    .heading h1 {
+        margin: 0;
+        font-size: 2rem;
+    }
+    .heading h3 {
+        margin: 5px;
+    }
+    .right-arrowhead {
+        color: var(--primary-color);
+    }
+    #RING {
+        margin-top: 100px;
+        background-image: url(assets/holiday-gift-guide-2023-homepage-large-2x.jpg);
+        background-repeat: no-repeat;
+        background-size: 100%;
+    }
+    #exclusive {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    #exclusive div {
+        background-color: orange;
+        height: auto;
+        width: auto;
+        padding: 10px;
+    }
+    #exclusive div p {
+        margin: 0;
+        padding: 0;
+    }
+    #exclusive div h6 {
+        margin: 0;
+        padding: 0;
+    }
+    .links {
+        font-size: 1.2rem;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        align-items: flex-start;
+    }
+    .links a {
+        margin: 5px;
+    }
+    #FUJIN {
+        background-image: url(https://assets2.razerzone.com/images/pnx.assets/65d476e8aff78d448b6b3233350f1bb0/fujin-pro-b-950x580-desktop.webp);
+        background-position: center;
+
+    }
+    #BLADE18 {
+        background-image: url(https://assets2.razerzone.com/images/pnx.assets/2fb5601db7a84213129e2f26d31f050f/mercury-blade16-blade18-b-950x580-desktop.webp);
+        background-position: center;
+
+    }
+    #BLADE14 {
+        background-image: url(https://assets2.razerzone.com/images/pnx.assets/ab20c0e7b6887e4438c7bb329c59b288/razer-blade-14-2023-b-950x580-desktop.webp);
+        background-position: center;
+
+    }
+    #HYPERPOLLING {
+        background-image: url(https://assets2.razerzone.com/images/pnx.assets/bbffede42365ea3ed65d0b13ab080c48/razer-hyperpolling-technology-b-950x580-desktop.webp);
+        background-position: center;
+
+    }
+    #AHSOKA {
+        background-image: url(https://assets2.razerzone.com/images/pnx.assets/65d476e8aff78d448b6b3233350f1bb0/axon-ashoka-950x580-desktop.webp);
+        background-position: center;
+    }
+    #GIFT-CARD {
+        background-image: url(https://assets2.razerzone.com/images/pnx.assets/65d476e8aff78d448b6b3233350f1bb0/ebonus-card-b-950x580-desktop.webp);
+        background-position: center;
+
+    }
+    .footer-large {
+        display: none;
+    }
+    .footer-mobile {
+        background-color: #111;
+        box-sizing: border-box;
+        color: white;
+        font-size: 12px;
+        width: 100%;
+        max-width: 100%;
+        margin: 0;
+        padding: 10px 20px;
+        transition: all 0.3s ease;
+    }
+    .footer-mobile hr {
+        opacity: 0.5;
+    }
+    #footer-list-mobile {
+        padding: 0;
+    }
+    .option {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .menu-icon {
+        font-size: 30px;
+        margin: 0;
+        padding: 0;
+    }
+    #copyright-mobile {
+        margin: 10px;
+        height: auto;
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: center;
+        align-items: center;
+    }
+    #copyright-mobile ul {
+        height: auto;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        align-items: center;
+    }
+    #copyright-mobile ul li {
+        margin: 5px;
+    }
+    #copyright-mobile p, #copyright-mobile ul {
+        margin: 0;
+    }
+    #location-mobile ul {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        align-items: center;
+    }
+    #location-mobile ul li {
+        margin: 5px;
+    }
+    #green-text {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        color: var(--primary-color);
+    }
+    #green-text p {
+        margin: 0;
+    }
+    #social-options {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        align-items: center;
+        padding: 0;
+        margin: 5px 0 50px 0;
+    }
+    .footer-list-heading {
+        margin-right: 0.4rem;
+    }
+    #social-options img {
+        margin: 0.4rem;
+        padding: 0;
+    }
+}
