@@ -1,3 +1,6 @@
+* {
+    box-sizing: border-box;
+}
 :root{
     --background-color: #f4f4f4;
     --primary-color: #44d62c;
@@ -18,6 +21,7 @@ h1 {
 .svg {
     height: 25px;
     width: auto;
+    margin: 10px;
 }
 ul {
     list-style-type: none;
@@ -29,96 +33,182 @@ a {
 
 /* Desktops and laptops ----------- */
 @media only screen 
-and (min-width : 1224px) {
+and (min-width : 1024px) {
     .small {
         display: none;
     }
     .large {
         position: fixed;
         top: 0;
-        height: auto;
+        z-index: 100;
         width: 100%;
-        overflow: hidden;
         background-color: black;
-        color: var(--text-color);
         display: flex;
         flex-direction: row;
-        justify-content: space-between;
+        justify-content: center;
         align-items: center;
-        padding: 0 200px;
-        border-bottom: 1.5px solid var(--primary-color);
+        max-height: 58px;
+        border-bottom: 1px solid var(--primary-color);
     }
     #nav-options {
         display: flex;
-        flex-direction: row;
-        justify-content: space-between;
+        flex-flow: row wrap;
+    }
+    #nav-options li {
+        margin: 10px 20px;
     }
     #nav-options a {
         color: var(--text-color);
     }
-    #nav-options li {
-        margin: 5px 35px;
-    }
-    #hamburger-menu {
-        cursor: pointer;
-    }
-    
-    h1 {
-        font-size: 3.2rem;
-        padding: 0;
-        margin: 0;
-    }
-    h3 {
-        font-size: 1.5rem;
-        font-weight: 400;
+    #banner {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #555;
+        color: white;
+        height: 44px;
+        padding: 2px;
+        transform: translateY(50px);
     }
     .section-large {
-        height: 1036.8px;
+        height: 710.4px;
+        /* background-attachment: fixed; */
+        padding-top: 3.5rem;
+        max-width: 100%;
+        box-sizing: border-box;
+        margin: 10px 0 10px 0;
     }
     .heading {
         text-align: center;
+        padding-left: 1.875rem;
+        padding-right: 1.875rem;
+        width: 100%;
+        margin-right: auto;
+        margin-left: auto;
     }
-    #RING {
-        margin-top: 150px;
-        background-image: url(assets/holiday-gift-guide-2023-homepage-large-2x.jpg);
-        background-repeat: no-repeat;
-        background-size: 100%;
+    .heading h1 {
+        font-size: 2.5rem;
+        margin: 2.5px;
+    }
+    .heading h3 {
+        font-size: 1.5rem;
+        font-weight: 400;
+        margin: 2.5px;
     }
     .links {
         font-size: 1.2rem;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        align-items: center;
+    }
+    .links a {
+        margin: 10px;
+    }
+    .right-arrowhead {
+        color: var(--primary-color);
+    }
+    #RING {
+        margin-top: 50px;
+        background-image: url(https://assets2.razerzone.com/images/pnx.assets/19139469bcc62860c37806cc9355cdf1/holiday-gift-guide-2023-homepage-large-2x.webp);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 150%;
+        transform: translateY(35px);
+    }
+    #IMMERSION {
+        background-image: url(https://assets2.razerzone.com/images/pnx.assets/19139469bcc62860c37806cc9355cdf1/razer-immersive-campaign-homepage-desktop2x.webp);
+        background-position: center;
+
+    }
+    #BLADE16 {
+        background-image: url(https://assets2.razerzone.com/images/pnx.assets/19139469bcc62860c37806cc9355cdf1/razer-blade16-lamborghini-homepage-desktop2x.webp);
+        background-position: center;
+
+    }
+    #exclusive {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    #exclusive div {
+        background-color: orange;
+        height: auto;
+        width: auto;
+        padding: 10px;
+    }
+    #exclusive div p {
+        margin: 0;
+        padding: 0;
+    }
+    #exclusive div h6 {
+        margin: 0;
+        padding: 0;
     }
     .cards {
         display: grid;
         grid-template-columns: 1fr 1fr;
         grid-template-rows: repeat(3, 1fr);
+        height: auto;
     }
-    .card {
+    .card-left {
         height: 580px;
-        margin: 10px;
+        margin: 0 10px 0 0;
+        padding-top: 2.5rem;
+    }
+    .card-right {
+        height: 580px;
+        margin: 0;
+        padding-top: 2.5rem;
+    }
+    .card-left-mid {
+        height: 580px;
+        padding-top: 2.5rem;
+        margin: 10px 10px 10px 0;
+    }
+    .card-right-mid {
+        height: 580px;
+        padding-top: 2.5rem;
+        margin: 10px 0 10px 0;
     }
     #FUJIN {
         background-image: url(https://assets2.razerzone.com/images/pnx.assets/65d476e8aff78d448b6b3233350f1bb0/fujin-pro-b-950x580-desktop.webp);
+        background-position: center;
+
     }
     #BLADE18 {
         background-image: url(https://assets2.razerzone.com/images/pnx.assets/2fb5601db7a84213129e2f26d31f050f/mercury-blade16-blade18-b-950x580-desktop.webp);
+        background-position: center;
+
     }
     #BLADE14 {
         background-image: url(https://assets2.razerzone.com/images/pnx.assets/ab20c0e7b6887e4438c7bb329c59b288/razer-blade-14-2023-b-950x580-desktop.webp);
+        background-position: center;
+
     }
     #HYPERPOLLING {
         background-image: url(https://assets2.razerzone.com/images/pnx.assets/bbffede42365ea3ed65d0b13ab080c48/razer-hyperpolling-technology-b-950x580-desktop.webp);
+        background-position: center;
+
     }
     #AHSOKA {
         background-image: url(https://assets2.razerzone.com/images/pnx.assets/65d476e8aff78d448b6b3233350f1bb0/axon-ashoka-950x580-desktop.webp);
+        background-position: center;
     }
     #GIFT-CARD {
         background-image: url(https://assets2.razerzone.com/images/pnx.assets/65d476e8aff78d448b6b3233350f1bb0/ebonus-card-b-950x580-desktop.webp);
+        background-position: center;
+
     }
-    footer {
+    .footer-large {
         font-size: 0.75rem;
         color: var(--text-color);
         background-color: black;
         padding: 25px;
+    }
+    .footer-mobile {
+        display: none;
     }
     .footer-flex {
         display: flex;
@@ -137,6 +227,7 @@ and (min-width : 1224px) {
     .footer-list {
         padding: 0;
         margin: 0;
+        height: 100%;
     }
     .footer-list-heading {
         color: white;
@@ -157,7 +248,8 @@ and (min-width : 1224px) {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
-        margin-left: 50px;
+        align-items: center;
+        margin-left: 100px;
     }
     #copyright ul {
         margin: 10px;
@@ -166,8 +258,14 @@ and (min-width : 1224px) {
         flex-direction: row;
         justify-content: space-between;
     }
+    #copyright ul li {
+        margin: 0 5px;
+    }
     #location {
         margin-right: 50px;
+    }
+    #location ul li {
+        margin: 0 5px;
     }
     #footer-text ul {
         display: flex;
