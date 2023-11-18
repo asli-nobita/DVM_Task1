@@ -14,9 +14,9 @@
 <body>
     <header>
         <nav class="small">
-            <img src="assets/mobile-menu.svg" alt="mobile-menu" class="svg menu-icon">
+            <img src="assets/mobile-menu.svg" alt="mobile-menu" class="svg">
             <img src="assets/razer-logo.svg" alt="logo" class="svg">
-            <img class="svg" width="20" height="20" src="https://img.icons8.com/material-outlined/24/EBEBEB/shopping-cart--v1.png" alt="shopping-cart--v1"/>
+            <img class="svg" id="cart" width="20" height="20" src="https://img.icons8.com/material-outlined/24/EBEBEB/shopping-cart--v1.png" alt="shopping-cart--v1"/>
             <div class="burger-menu">
                 <ul class="menu">
                     <li><a href="#">Store</a></li>
@@ -32,7 +32,7 @@
         </nav>
         
         <nav class="large">
-            <img src="assets/razer-logo.svg" alt="logo" class="svg">
+            <img src="assets/razer-logo.svg" alt="logo" class="svg" id="razer-logo">
             <div id="ul">
                 <ul id="nav-options">
                     <li><a href="#">Store</a></li>
@@ -46,8 +46,8 @@
                 </ul>
             </div>
             <div id="buttons">
-                <img class="svg" width="30" height="30" src="https://img.icons8.com/ios-glyphs/30/EBEBEB/search--v1.png" alt="search--v1"/>
-                <img class="svg" width="24" height="24" src="https://img.icons8.com/material-outlined/24/EBEBEB/shopping-cart--v1.png" alt="shopping-cart--v1"/>
+                <img class="svg" id="search" width="30" height="30" src="https://img.icons8.com/ios-glyphs/30/EBEBEB/search--v1.png" alt="search--v1"/>
+                <img class="svg" id="cart" width="24" height="24" src="https://img.icons8.com/material-outlined/24/EBEBEB/shopping-cart--v1.png" alt="shopping-cart--v1"/>
             </div>
         </nav>
         <div id="banner">
@@ -264,18 +264,18 @@
         <div class="footer-mobile">
             <div id="footer-options-mobile">
                 <ul id="footer-list-mobile">
-                    <li><div class="option"><p>Shop</p><p class="menu-icon">+</p></div></li>
+                    <li><div class="option"><p>Shop</p><p class="menu-icon" onclick="toggleMenu">+</p></div></li>
                     <hr>
-                    <li><div class="option"><p>Explore</p><p class="menu-icon">+</p></div></li>
+                    <li><div class="option"><p>Explore</p><p class="menu-icon" onclick="toggleMenu">+</p></div></li>
                     <hr>
-                    <li><div class="option"><p>Support</p><p class="menu-icon">+</p></div></li>
+                    <li><div class="option"><p>Support</p><p class="menu-icon" onclick="toggleMenu">+</p></div></li>
                     <hr>
-                    <li><div class="option"><p>Company</p><p class="menu-icon">+</p></div></li>
+                    <li><div class="option"><p>Company</p><p class="menu-icon" onclick="toggleMenu">+</p></div></li>
                     <hr>
                 </ul>
             </div>
             <!-- Shop dropdown menu -->
-            <div class="burger-menu">
+            <div class="burger-menu shop-menu">
                 <ul class="menu">
                     <li><a href="#">RazerStores</a></li>
                     <li><a href="#">RazerCafe</a></li>
@@ -288,7 +288,7 @@
                 </ul>
             </div>
             <!-- Explore dropdown menu -->
-            <div class="burger-menu">
+            <div class="burger-menu explore-menu">
                 <ul class="menu">
                     <li><a href="#">Technology</a></li>
                     <li><a href="#">Chroma RGB</a></li>
@@ -298,7 +298,7 @@
                 </ul>
             </div>
             <!-- Support dropdown menu -->
-            <div class="burger-menu">
+            <div class="burger-menu support-menu">
                 <ul class="menu">
                     <li><a href="#">Get Help</a></li>
                     <li><a href="#">Registration & Warranty</a></li>
@@ -310,7 +310,7 @@
                 </ul>
             </div>
             <!-- Company dropdown menu -->
-            <div class="burger-menu">
+            <div class="burger-menu company-menu">
                 <ul class="menu">
                     <li><a href="#">About Us</a></li>
                     <li><a href="#">Careers</a></li>
