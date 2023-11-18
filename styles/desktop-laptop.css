@@ -101,11 +101,19 @@ and (min-width : 1024px) {
         flex-flow: row wrap;
         justify-content: center;
         align-items: center;
+        column-gap: 10px;
     }
-    .links a {
-        margin: 10px;
+    .link {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-between;
+        align-items: center;
     }
-    .right-arrowhead {
+    .link a:hover {
+        text-decoration: underline;
+        transition: 0.5s ease;
+    }
+    .green-arrowhead {
         color: var(--primary-color);
     }
     #RING {
@@ -113,7 +121,7 @@ and (min-width : 1024px) {
         background-image: url(https://assets2.razerzone.com/images/pnx.assets/19139469bcc62860c37806cc9355cdf1/holiday-gift-guide-2023-homepage-large-2x.webp);
         background-position: center;
         background-repeat: no-repeat;
-        background-size: 150%;
+        background-size: 175%;
         transform: translateY(0);
     }
     #IMMERSION {
@@ -150,27 +158,26 @@ and (min-width : 1024px) {
         display: grid;
         grid-template-columns: 1fr 1fr;
         grid-template-rows: repeat(3, 1fr);
+        row-gap: 10px;
+        column-gap: 10px;
+        margin-bottom: 10px;
         height: auto;
     }
     .card-left {
         height: 580px;
-        margin: 0 10px 0 0;
         padding-top: 2.5rem;
     }
     .card-right {
         height: 580px;
-        margin: 0;
         padding-top: 2.5rem;
     }
     .card-left-mid {
         height: 580px;
         padding-top: 2.5rem;
-        margin: 10px 10px 10px 0;
     }
     .card-right-mid {
         height: 580px;
         padding-top: 2.5rem;
-        margin: 10px 0 10px 0;
     }
     #FUJIN {
         background-image: url(https://assets2.razerzone.com/images/pnx.assets/65d476e8aff78d448b6b3233350f1bb0/fujin-pro-b-950x580-desktop.webp);
