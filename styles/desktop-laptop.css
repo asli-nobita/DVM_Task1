@@ -108,15 +108,16 @@ and (min-width : 1024px) {
         flex-flow: row wrap;
         justify-content: space-between;
         align-items: center;
+        padding: 0 5px;
     }
     .link a:hover {
-        text-decoration: underline;
+        border-bottom: 1px solid white;
         transition: 0.5s ease;
     }
     .green-arrowhead {
         color: var(--primary-color);
     }
-    #RING {
+    #CYBER {
         margin-top: 50px;
         background-image: url(https://assets2.razerzone.com/images/pnx.assets/19139469bcc62860c37806cc9355cdf1/holiday-gift-guide-2023-homepage-large-2x.webp);
         background-position: center;
