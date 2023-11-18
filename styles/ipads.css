@@ -57,8 +57,11 @@ and (max-width: 1024px) {
     #nav-options a {
         color: var(--text-color);
     }
-    #hamburger-menu {
-        cursor: pointer;
+    .burger-menu {
+        display: none;
+    }
+    .menu {
+        display: none;
     }
     h3 {
         font-size: 1.5rem;
