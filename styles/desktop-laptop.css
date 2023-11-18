@@ -114,7 +114,7 @@ and (min-width : 1024px) {
         background-position: center;
         background-repeat: no-repeat;
         background-size: 150%;
-        transform: translateY(35px);
+        transform: translateY(0);
     }
     #IMMERSION {
         background-image: url(https://assets2.razerzone.com/images/pnx.assets/19139469bcc62860c37806cc9355cdf1/razer-immersive-campaign-homepage-desktop2x.webp);
