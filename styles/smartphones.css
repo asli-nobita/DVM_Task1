@@ -18,7 +18,7 @@ h1 {
     font-weight: 600;
 }
 .svg {
-    height: 25px;
+    height: 20px;
     width: auto;
 }
 ul {
@@ -63,17 +63,46 @@ and (max-width : 768px) {
     #nav-options a {
         color: var(--text-color);
     }
-    #hamburger-menu {
+    .menu-icon {
         cursor: pointer;
+        position: relative;
+    }
+    .burger-menu {
+        display: none;
+        transform: translateY(-500px);
+    }
+    .showMenu {
+        display: block;
+        background-color: #222;
+        color: white;
+        position: absolute;
+        z-index: 50;
+        padding: 2rem;
+        transform: translateY(0);
+    }
+    #banner {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        background-color: #555;
+        font-size: 14px;
+        color: white;
+        height: auto;
+        padding: 7px;
+        transform: translateY(46px);
     }
     h3 {
         font-size: 1.5rem;
         font-weight: 400;
     }
-    .section-large {
-        height: 1036.8px;
+    .card {
+        height: 580px;
+        margin: 5px 0 5px 0;
         max-width: 100%;
         box-sizing: border-box;
+        background-repeat: no-repeat;
+        padding-top: 4rem;
     }
     .heading {
         text-align: center;
@@ -86,6 +115,9 @@ and (max-width : 768px) {
     }
     .heading h3 {
         margin: 5px;
+    }
+    .right-arrowhead {
+        color: var(--primary-color);
     }
     #RING {
         margin-top: 100px;
@@ -115,12 +147,13 @@ and (max-width : 768px) {
     }
     .links {
         font-size: 1.2rem;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        align-items: flex-start;
     }
-    .card {
-        height: 580px;
+    .links a {
         margin: 5px;
-        width: 100%;
-        box-sizing: border-box;
     }
     #FUJIN {
         background-image: url(https://assets2.razerzone.com/images/pnx.assets/65d476e8aff78d448b6b3233350f1bb0/fujin-pro-b-950x580-desktop.webp);
@@ -226,9 +259,13 @@ and (max-width : 768px) {
         justify-content: center;
         align-items: center;
         padding: 0;
-        margin: 0 0 50px 0;
+        margin: 5px 0 50px 0;
     }
-    #social-options li {
-        margin: 0;
+    .footer-list-heading {
+        margin-right: 0.4rem;
+    }
+    #social-options img {
+        margin: 0.4rem;
+        padding: 0;
     }
 }
