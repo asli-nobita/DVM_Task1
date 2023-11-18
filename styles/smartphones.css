@@ -44,6 +44,7 @@ and (max-width : 768px) {
         justify-content: space-between;
         align-items: center;
         height: auto;
+        max-height: 60px;
         border-bottom: 1px solid var(--primary-color);
     }
     .svg {
@@ -74,17 +75,26 @@ and (max-width : 768px) {
         display: none;
         transform: translateY(-500px);
     }
+    .show {
+        transform: translateY(0rem);
+        visibility: visible;
+        opacity: 1;
+    }
     #banner {
         display: flex;
         justify-content: center;
         align-items: center;
+        z-index: 50;
         text-align: center;
         background-color: #555;
         font-size: 14px;
         color: white;
         height: auto;
-        padding: 7px;
+        padding: 2px;
         transform: translateY(46px);
+    }
+    #banner p {
+        margin: 2px;
     }
     h3 {
         font-size: 1.5rem;
@@ -96,7 +106,7 @@ and (max-width : 768px) {
         max-width: 100%;
         box-sizing: border-box;
         background-repeat: no-repeat;
-        padding-top: 4rem;
+        padding-top: 3rem;
     }
     .heading {
         text-align: center;
@@ -105,19 +115,27 @@ and (max-width : 768px) {
     }
     .heading h1 {
         margin: 0;
-        font-size: 2rem;
+        font-size: 1.75rem;
     }
     .heading h3 {
+        font-size: 1.25rem;
         margin: 5px;
     }
-    .right-arrowhead {
+    .green-arrowhead {
         color: var(--primary-color);
     }
-    #RING {
-        margin-top: 100px;
-        background-image: url(assets/holiday-gift-guide-2023-homepage-large-2x.jpg);
+    #CYBER {
+        background-image: url(https://assets2.razerzone.com/images/pnx.assets/a04e3f25d77365db4968d10fea66aa8e/cyber-weekend-early-access-2023-homepage-mobile2x.webp);
+        background-position: center;
         background-repeat: no-repeat;
-        background-size: 100%;
+    }
+    #IMMERSION {
+        background-image: url(https://assets2.razerzone.com/images/pnx.assets/19139469bcc62860c37806cc9355cdf1/razer-immersive-campaign-homepage-mobile2x.webp);
+        background-position: center;
+    }
+    #BLADE16 {
+        background-image: url(https://assets2.razerzone.com/images/pnx.assets/19139469bcc62860c37806cc9355cdf1/razer-blade16-lamborghini-homepage-mobile2x.webp);
+        background-position: center;
     }
     #exclusive {
         width: 100%;
@@ -140,14 +158,19 @@ and (max-width : 768px) {
         padding: 0;
     }
     .links {
-        font-size: 1.2rem;
+        font-size: 1rem;
         display: flex;
         flex-flow: row wrap;
         justify-content: center;
-        align-items: flex-start;
+        align-items: center;
+        column-gap: 10px;
     }
-    .links a {
-        margin: 5px;
+    .link {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 5px;
     }
     #FUJIN {
         background-image: url(https://assets2.razerzone.com/images/pnx.assets/65d476e8aff78d448b6b3233350f1bb0/fujin-pro-b-950x580-desktop.webp);
