@@ -42,13 +42,14 @@ and (max-width: 1024px) {
         background-color: black;
         display: flex;
         flex-direction: row;
-        justify-content: center;
+        justify-content: space-between;
         align-items: center;
         max-height: 50px;
     }
     #nav-options {
         display: flex;
         justify-content: space-between;
+        column-gap: 32px;
         flex-direction: row;
     }
     #nav-options li {
@@ -57,11 +58,8 @@ and (max-width: 1024px) {
     #nav-options a {
         color: var(--text-color);
     }
-    .burger-menu {
-        display: none;
-    }
-    .menu {
-        display: none;
+    #hamburger-menu {
+        cursor: pointer;
     }
     h3 {
         font-size: 1.5rem;
@@ -75,6 +73,7 @@ and (max-width: 1024px) {
     }
     .heading h1 {
         font-size: 2.5rem;
+        line-height: 1;
         margin-bottom: 0;
     }
     .heading h3 {
@@ -82,11 +81,9 @@ and (max-width: 1024px) {
         margin-bottom: 10px;
     }
     
-    #RING {
-        margin-top: 100px;
-        background-image: url(assets/holiday-gift-guide-2023-homepage-large-2x.jpg);
-        background-repeat: no-repeat;
-        background-size: 100%;
+    #CYBER {
+        background-image: url(https://assets2.razerzone.com/images/pnx.assets/a04e3f25d77365db4968d10fea66aa8e/cyber-weekend-early-access-2023-homepage-desktop2x.webp);
+        background-position: center;
     }
     #exclusive {
         width: 100%;
@@ -114,17 +111,20 @@ and (max-width: 1024px) {
         justify-content: center;
         align-items: center;
     }
-    .right-arrowhead {
+    .green-arrowhead {
         color: var(--primary-color);
     }
     .cards {
         display: grid;
         grid-template-columns: 1fr 1fr;
         grid-template-rows: repeat(3, 1fr);
+        row-gap: 10px;
+        column-gap: 10px;
+        margin-bottom: 10px;
+        height: auto;
     }
     .card {
         height: 580px;
-        margin: 5px;
     }
     #FUJIN {
         background-image: url(https://assets2.razerzone.com/images/pnx.assets/65d476e8aff78d448b6b3233350f1bb0/fujin-pro-b-950x580-desktop.webp);
