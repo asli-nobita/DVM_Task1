@@ -89,7 +89,8 @@ and (max-width : 768px) {
         padding: 10px;
     }
     .show {
-        position: relative;
+        position: fixed;
+        overflow-y: hidden;
         transform: translateY(0rem);
         display: block;
         height: 100vh;
@@ -143,7 +144,7 @@ and (max-width : 768px) {
     #CYBER {
         background-image: url(https://assets2.razerzone.com/images/pnx.assets/a04e3f25d77365db4968d10fea66aa8e/cyber-weekend-early-access-2023-homepage-mobile2x.webp);
         background-position: center;
-        background-repeat: no-repeat;
+        background-size: 150%;
     }
     #IMMERSION {
         background-image: url(https://assets2.razerzone.com/images/pnx.assets/19139469bcc62860c37806cc9355cdf1/razer-immersive-campaign-homepage-mobile2x.webp);
