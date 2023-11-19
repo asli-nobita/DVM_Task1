@@ -117,7 +117,7 @@ and (min-width : 1024px) {
         padding: 0 5px;
     }
     .link a:hover {
-        border-bottom: 1px solid white;
+        text-decoration: underline;
         transition: 0.5s ease;
     }
     .green-arrowhead {
